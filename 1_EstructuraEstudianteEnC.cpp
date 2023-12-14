@@ -19,10 +19,16 @@ void mostrarEstudiante(struct Estudiante e) {
 
 int main() {
 
-}
-    // Aquí se crea e inicializa una instancia de Estudiant
+    // Aquí se crea e inicializa una instancia de Estudiante
 
     struct Estudiante estudiante;
     strcpy(estudiante.nombre, "Sergio Baron");
     estudiante.edad = 23;
     estudiante.promedio = 9.5;
+
+    // Por último mostramos los datos del estudiante
+
+    mostrarEstudiante(estudiante);
+
+    return 0;
+}
