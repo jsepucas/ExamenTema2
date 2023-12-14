@@ -44,3 +44,18 @@ struct Estudiante {
 
         asistencias.emplace_back(fecha, materia, estado);
     }
+
+    void mostrarAsistencias() const {
+        std::cout << "Asistencias de " << nombre << ":\n";
+        for (const auto& a : asistencias) {
+            std::cout << "Fecha: " << a.fecha << ", Materia: " << a.materia << ", Estado: ";
+            switch (a.estado) {
+                case Asistencia::Asistio: std::cout << "Asiste a clase"; break;
+                case Asistencia::Falta: std::cout << "Falta"; break;
+                case Asistencia::Tardanza: std::cout << "LLega tarde"; break;
+            }
+            std::cout << std::endl;
+        }
+    }
+};
+
