@@ -40,3 +40,8 @@ void mostrarEstudiante(const Estudiante &e) {
     mostrarMaterias(e);
 }
 
+int main() {
+    // Volvemos a crear y a inicializar una instancia de Estudiante
+
+    Estudiante estudiante = {"Lydia Sanchez", 20, 8.5};
+
