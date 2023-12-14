@@ -10,3 +10,9 @@ struct Estudiante {
     float promedio;
     std::vector<std::string> materias;
 };
+
+// Añadimos unciones para manejar materias
+
+void agregarMateria(Estudiante &e, const std::string &materia) {
+    e.materias.push_back(materia);
+}
