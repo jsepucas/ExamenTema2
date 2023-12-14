@@ -23,4 +23,8 @@ int main() {
 
     Estudiante estudiante = {"Juan Perez", 20, 8.5};
 
+    // Por último mostramos los datos del estudiante
+    mostrarEstudiante(estudiante);
 
+    return 0;
+}
