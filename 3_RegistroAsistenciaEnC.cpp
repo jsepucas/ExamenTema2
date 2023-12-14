@@ -14,3 +14,17 @@ struct Asistencia {
     char materia[50];
     Estado estado;
 };
+
+// Estructura para almacenar la información de un estudiante
+
+struct Estudiante {
+    char nombre[50];
+    int edad;
+    float promedio;
+    char materias[MAX_MATERIAS][50];
+    int numMaterias;
+    struct Asistencia asistencias[MAX_ASISTENCIAS];
+    int numAsistencias;
+};
+
+
