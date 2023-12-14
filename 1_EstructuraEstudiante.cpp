@@ -21,7 +21,7 @@ int main() {
 
     // Aquí se crea e inicializa una instancia de Estudiante
 
-    Estudiante estudiante = {"Juan Perez", 20, 8.5};
+    Estudiante estudiante = {"Sergio Barón", 23, 9.5};
 
     // Por último mostramos los datos del estudiante
     mostrarEstudiante(estudiante);
