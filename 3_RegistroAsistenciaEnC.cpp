@@ -58,8 +58,25 @@ void mostrarAsistencias(const struct Estudiante *e) {
         switch (e->asistencias[i].estado) {
             case Asistio: printf("Asistió"); break;
             case Falta: printf("Falta"); break;
-            case Tardanza: printf("Tardanza"); break;
+            case Tardanza: printf("LLega tarde"); break;
         }
         printf("\n");
     }
 }
+
+int main() {
+    // Crear e inicializar una instancia de Estudiante
+    struct Estudiante estudiante = {"Juan Paez", 20, 8.5, {}, 0, {}, 0};
+
+    // Agregar materias al estudiante
+    agregarMateria(&estudiante, "Algebra");
+
+    // Registrar asistencias para el estudiante
+    registrarAsistencia(&estudiante, "2023-12-01", "Matemáticas", Asistio);
+
+    // Mostrar las asistencias registradas
+    mostrarAsistencias(&estudiante);
+
+    return 0;
+}
+
