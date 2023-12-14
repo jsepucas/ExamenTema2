@@ -56,7 +56,7 @@ void mostrarAsistencias(const struct Estudiante *e) {
     for (int i = 0; i < e->numAsistencias; i++) {
         printf("Fecha: %s, Materia: %s, Estado: ", e->asistencias[i].fecha, e->asistencias[i].materia);
         switch (e->asistencias[i].estado) {
-            case Asistio: printf("Asistió"); break;
+            case Asistio: printf("Asistio a clase"); break;
             case Falta: printf("Falta"); break;
             case Tardanza: printf("LLega tarde"); break;
         }
@@ -72,7 +72,7 @@ int main() {
     agregarMateria(&estudiante, "Algebra");
 
     // Registrar asistencias para el estudiante
-    registrarAsistencia(&estudiante, "2023-12-01", "Matemáticas", Asistio);
+    registrarAsistencia(&estudiante, "2023-12-01 ", "Fisica", Asistio);
 
     // Mostrar las asistencias registradas
     mostrarAsistencias(&estudiante);
