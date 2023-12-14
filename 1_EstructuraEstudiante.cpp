@@ -9,4 +9,7 @@ struct Estudiante {
     float promedio;
 };
 
+// En esta función mostramos los datos del estudiante
+
+
 
