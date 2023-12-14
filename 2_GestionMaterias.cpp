@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 // Definición estructura de estudiante
 
@@ -11,7 +12,7 @@ struct Estudiante {
     std::vector<std::string> materias;
 };
 
-// Añadimos unciones para manejar materias
+// Añadimos funciones para manejar materias
 
 void agregarMateria(Estudiante &e, const std::string &materia) {
     e.materias.push_back(materia);
