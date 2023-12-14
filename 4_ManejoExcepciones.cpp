@@ -21,3 +21,15 @@ public:
 
     Asistencia(const std::string& f, const std::string& m, Estado e) : fecha(f), materia(m), estado(e) {}
 };
+
+struct Estudiante {
+    std::string nombre;
+    int edad;
+    float promedio;
+    std::vector<std::string> materias;
+    std::vector<Asistencia> asistencias;
+
+    void agregarMateria(const std::string& materia) {
+        materias.push_back(materia);
+    }
+
