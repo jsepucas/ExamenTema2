@@ -17,4 +17,7 @@ void mostrarEstudiante(Estudiante e) {
     std::cout << "Promedio: " << e.promedio << std::endl;
 }
 
+int main() {
+
+    // Aquí se crea e inicializa una instancia de Estudiante
 
