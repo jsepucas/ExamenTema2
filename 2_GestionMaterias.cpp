@@ -45,3 +45,10 @@ int main() {
 
     Estudiante estudiante = {"Lydia Sanchez", 20, 8.5};
 
+    // Agregamos materias al estudiante
+
+    agregarMateria(estudiante, "Calculo I");
+    agregarMateria(estudiante, "Algebra Lineal");
+
+
+
