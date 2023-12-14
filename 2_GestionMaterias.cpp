@@ -50,5 +50,9 @@ int main() {
     agregarMateria(estudiante, "Calculo I");
     agregarMateria(estudiante, "Algebra Lineal");
 
+    // Y por último mostramos los datos del estudiante
+    mostrarEstudiante(estudiante);
 
+    return 0;
+}
 
