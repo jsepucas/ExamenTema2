@@ -27,4 +27,24 @@ struct Estudiante {
     int numAsistencias;
 };
 
+// Función para agregar una materia al estudiante
 
+void agregarMateria(struct Estudiante *e, const char *materia) {
+    // Asegurarse de no exceder el límite de materias
+    if (e->numMaterias < MAX_MATERIAS) {
+        strcpy(e->materias[e->numMaterias], materia);
+        e->numMaterias++;
+    }
+}
+
+// Función para registrar la asistencia de un estudiante
+
+void registrarAsistencia(struct Estudiante *e, const char *fecha, const char *materia, Estado estado) {
+    // Asegurarse de no exceder el límite de asistencias
+    if (e->numAsistencias < MAX_ASISTENCIAS) {
+        strcpy(e->asistencias[e->numAsistencias].fecha, fecha);
+        strcpy(e->asistencias[e->numAsistencias].materia, materia);
+        e->asistencias[e->numAsistencias].estado = estado;
+        e->numAsistencias++;
+    }
+}
