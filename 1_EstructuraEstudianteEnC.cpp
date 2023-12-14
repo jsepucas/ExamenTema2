@@ -23,6 +23,6 @@ int main() {
     // Aquí se crea e inicializa una instancia de Estudiant
 
     struct Estudiante estudiante;
-    strcpy(estudiante.nombre, "Sergio Barón");
+    strcpy(estudiante.nombre, "Sergio Baron");
     estudiante.edad = 23;
     estudiante.promedio = 9.5;
