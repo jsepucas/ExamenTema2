@@ -33,3 +33,14 @@ struct Estudiante {
         materias.push_back(materia);
     }
 
+    void registrarAsistencia(const std::string& fecha, const std::string& materia, Asistencia::Estado estado) {
+        if (fecha.length() != 10 || fecha[4] != '-' || fecha[7] != '-') {
+            throw FechaFormatException("Formato de fecha inválido");
+        }
+
+        if (std::find(materias.begin(), materias.end(), materia) == materias.end()) {
+            throw MateriaNoRegistradaException("Materia no registrada");
+        }
+
+        asistencias.emplace_back(fecha, materia, estado);
+    }
