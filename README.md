@@ -1,8 +1,9 @@
 # ExamenTema2
 https://github.com/jsepucas/ExamenTema2.git
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Parte 1: Preguntas de elección múltiple 
+
 
 1. ¿Cuál es la principal diferencia entre la estructura básica del programa en C y C++?
 Respuesta:
@@ -23,6 +24,8 @@ Respuesta:
 Respuesta:
 
   b) Permiten la creación de funciones y clases genéricas, es decir, que pueden trabajar
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Parte 2: Pregunta de desarrollo de código (80%)
 
