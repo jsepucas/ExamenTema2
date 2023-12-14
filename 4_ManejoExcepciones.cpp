@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
+#include <algorithm>
 
 class FechaFormatException : public std::runtime_error {
 public:
@@ -59,3 +60,21 @@ struct Estudiante {
     }
 };
 
+int main() {
+    Estudiante estudiante{"Juan Sepulveda", 20, 8.5};
+
+    try {
+        estudiante.agregarMateria("Algebra");
+        estudiante.registrarAsistencia("2023-08-16", "Calculo II", Asistencia::Asistio);
+    } catch (const FechaFormatException& e) {
+        std::cerr << "Error de formato de fecha: " << e.what() << std::endl;
+    } catch (const MateriaNoRegistradaException& e) {
+        std::cerr << "Error de materia no registrada: " << e.what() << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+
+    estudiante.mostrarAsistencias();
+    return 0;
+
+}
