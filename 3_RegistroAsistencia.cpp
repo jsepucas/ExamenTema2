@@ -34,7 +34,7 @@ struct Estudiante {
         for (const auto& a : asistencias) {
             std::cout << "Fecha: " << a.fecha << ", Materia: " << a.materia << ", Estado: ";
             switch (a.estado) {
-                case Asistencia::Asistio: std::cout << "Asiste"; break;
+                case Asistencia::Asistio: std::cout << "Asistio a clase"; break;
                 case Asistencia::Falta: std::cout << "Falta"; break;
                 case Asistencia::Tardanza: std::cout << "Tarde a clase"; break;
             }
@@ -48,7 +48,7 @@ struct Estudiante {
 int main() {
     Estudiante estudiante{"Carlos Sanchez", 20, 8.5};
     estudiante.agregarMateria("Fisica");
-    estudiante.registrarAsistencia("2023-12-12", "Matemáticas", Asistencia::Asistio);
+    estudiante.registrarAsistencia("2023-12-12", "Matematicas", Asistencia::Asistio);
     estudiante.mostrarAsistencias();
     return 0;
 }
