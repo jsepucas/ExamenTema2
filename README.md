@@ -40,5 +40,33 @@ Comparativa de las Implementaciones
 
 - Referencia de Estructuras: En C++, cuando se declara una variable de tipo estructura, no es necesario usar la palabra clave struct, mientras que en C sí es necesario.
 
+En el segundo ejercicio: 
+
+- Orientación a Objetos: C++ ofrece orientación a objetos, lo cual es útil para modelar entidades como 'Estudiante'.
+- Facilidad de Uso: C++ tiene características como sobrecarga de funciones, plantillas, y manejo más intuitivo de cadenas que pueden simplificar el código.
+- Manejo de Memoria: C++ proporciona constructores y destructores para un mejor manejo de memoria.
+
+En el tercer ejercicio:
+
+- En C++, se expande la estructura 'Estudiante' para incluir una lista de materias, con funciones para agregar, eliminar y mostrar estas materias.
+- En C, se realiza una implementación similar usando estructuras y arrays.
+
+
+En el cuarto ejercicio:
+
+- En C++, se diseña una clase o estructura 'Asistencia' con campos para fecha, materia y estado de asistencia, integrándola con 'Estudiante'.
+- En C, se sigue un enfoque procedural para lograr una funcionalidad similar.
+
+## En conclusión:
+
+Elección del Lenguaje: Se recomienda C++ sobre C para el proyecto del "Centro Global de Estudios Avanzados" (CGEA) debido a su orientación a objetos, mejor manejo de excepciones y mayor facilidad de uso, lo que es crucial para un sistema de gestión académica complejo y escalable.
+
+En cuanto a la recomendación que daría seria añadir estas cosas:
+
+- Planificación detallada de requisitos y funcionalidades.
+- Un uso de patrones de diseño modernos para un código robusto y mantenible.
+- La implementación de pruebas continuas (unitarias y de integración).
+- El mantenimiento de documentación clara y formación continua al equipo en características avanzadas de C++.
+- Evaluación de frameworks y bibliotecas de C++ para eficiencia y funcionalidades adicionales.
 
 
