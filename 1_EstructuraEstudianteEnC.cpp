@@ -16,3 +16,13 @@ void mostrarEstudiante(struct Estudiante e) {
     printf("Edad: %d\n", e.edad);
     printf("Promedio: %.2f\n", e.promedio);
 }
+
+int main() {
+
+}
+    // Aquí se crea e inicializa una instancia de Estudiant
+
+    struct Estudiante estudiante;
+    strcpy(estudiante.nombre, "Sergio Barón");
+    estudiante.edad = 23;
+    estudiante.promedio = 9.5;
