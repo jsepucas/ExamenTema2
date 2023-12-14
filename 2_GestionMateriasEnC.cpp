@@ -40,3 +40,19 @@ void mostrarMaterias(const struct Estudiante *e) {
         printf(" - %s\n", e->materias[i]);
     }
 }
+
+int main() {
+    // Creamos e inicializamos una instancia de Estudiante
+
+    struct Estudiante estudiante = {"Miguel Ortiz", 17, 7.5, {}, 0};
+
+    // Volvemos a agregar las materias
+
+    agregarMateria(&estudiante, "Filosofia");
+    agregarMateria(&estudiante, "Historia de España");
+
+    // Mostrar los datos del estudiante
+    mostrarEstudiante(&estudiante);
+
+    return 0;
+}
