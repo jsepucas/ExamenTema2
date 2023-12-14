@@ -31,3 +31,12 @@ void mostrarMaterias(const Estudiante &e) {
     }
 }
 
+// Ahora agregamos funcion donde se muestran los datos del estudiante
+
+void mostrarEstudiante(const Estudiante &e) {
+    std::cout << "Nombre: " << e.nombre << std::endl;
+    std::cout << "Edad: " << e.edad << std::endl;
+    std::cout << "Nota media: " << e.promedio << std::endl;
+    mostrarMaterias(e);
+}
+
