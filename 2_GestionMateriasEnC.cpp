@@ -16,38 +16,30 @@ struct Estudiante {
 // Funciones en las que gestionamos las materias
 
 void agregarMateria(struct Estudiante *e, const char *materia) {
-    if (e->numMaterias < MAX_MATERIAS) {
-        strcpy(e->materias[e->numMaterias], materia);
-        e->numMaterias++;
-    }
+    // tu código existente...
 }
 
 void eliminarMateria(struct Estudiante *e, const char *materia) {
-    for (int i = 0; i < e->numMaterias; i++) {
-        if (strcmp(e->materias[i], materia) == 0) {
-            for (int j = i; j < e->numMaterias - 1; j++) {
-                strcpy(e->materias[j], e->materias[j + 1]);
-            }
-            e->numMaterias--;
-            break;
-        }
-    }
+    // tu código existente...
 }
 
 void mostrarMaterias(const struct Estudiante *e) {
-    printf("Materias de %s:\n", e->nombre);
-    for (int i = 0; i < e->numMaterias; i++) {
-        printf(" - %s\n", e->materias[i]);
-    }
+    // tu código existente...
+}
+
+// Función para mostrar los datos del estudiante
+void mostrarEstudiante(const struct Estudiante *e) {
+    printf("Nombre: %s\n", e->nombre);
+    printf("Edad: %d\n", e->edad);
+    printf("Promedio: %.2f\n", e->promedio);
+    mostrarMaterias(e);
 }
 
 int main() {
     // Creamos e inicializamos una instancia de Estudiante
-
     struct Estudiante estudiante = {"Miguel Ortiz", 17, 7.5, {}, 0};
 
     // Volvemos a agregar las materias
-
     agregarMateria(&estudiante, "Filosofia");
     agregarMateria(&estudiante, "Historia de España");
 
