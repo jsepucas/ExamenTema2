@@ -29,5 +29,16 @@ Respuesta:
 
 ## Parte 2: Pregunta de desarrollo de código (80%)
 
-En el primer ejercicio del código 
+En el primer ejercicio del código la comparativa de los 2 ejercicios es: 
+
+Comparativa de las Implementaciones
+- Sintaxis de la Estructura: En C++, las estructuras se definen de manera similar a C, pero C++ permite el uso de string directamente, mientras que en C se debe usar char[] para cadenas de caracteres.
+
+- Impresión de Datos: C++ utiliza el operador << y la biblioteca iostream para imprimir, proporcionando un estilo más sencillo y orientado a objetos. C utiliza printf de la biblioteca stdio.h, que es más tradicional y requiere especificadores de formato.
+
+- Manejo de Cadenas de Texto: C++ puede utilizar el tipo std::string para manejar cadenas de texto de forma más sencilla y segura. En C, se utilizan arreglos de caracteres (char[]) y funciones como strcpy para la manipulación de cadenas.
+
+- Referencia de Estructuras: En C++, cuando se declara una variable de tipo estructura, no es necesario usar la palabra clave struct, mientras que en C sí es necesario.
+
+
 
